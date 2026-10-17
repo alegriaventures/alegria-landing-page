@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102f52">
+  <meta name="description" content="Alegria Ventures Private Limited — website under processing.">
+  <title>Alegria Ventures | Is Under Processing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #10365f;
+      --navy-deep: #0c2a4b;
+      --orange: #ffad18;
+      --white: #fff;
+      --text: #123b68;
+      --muted: #24496f;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body {
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      font-family: "Poppins", sans-serif;
+      color: var(--text);
+      background: #f8fbff;
+    }
+
+    .hero {
+      position: relative;
+      isolation: isolate;
+      flex: 1 0 auto;
+      min-height: 700px;
+      min-height: calc(100svh - 178px);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      background:
+        linear-gradient(90deg,
+          rgba(255,255,255,.99) 0%,
+          rgba(255,255,255,.97) 30%,
+          rgba(255,255,255,.83) 47%,
+          rgba(255,255,255,.42) 68%,
+          rgba(255,255,255,.25) 100%),
+        linear-gradient(0deg, rgba(255,255,255,.35), rgba(255,255,255,.15)),
+        url("./construction-scene.jpg") right center / cover no-repeat,
+        #f8fbff;
+    }
+
+    .site-header {
+      position: relative;
+      z-index: 1;
+      padding: 38px clamp(28px, 5.8vw, 90px) 0;
+    }
+
+    .brand {
+      margin: 0;
+      color: var(--navy);
+      font-size: clamp(18px, 2vw, 29px);
+      font-weight: 600;
+      letter-spacing: .13em;
+      line-height: 1.35;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      width: min(100%, 800px);
+      margin: auto 0;
+      padding: 72px clamp(28px, 6.8vw, 105px) 76px;
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      margin: 0 0 26px;
+      color: #f2a000;
+      font-size: clamp(11px, 1.2vw, 17px);
+      font-weight: 500;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 62px;
+      height: 3px;
+      flex: 0 0 62px;
+      background: var(--orange);
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--navy);
+      font-size: clamp(48px, 6.7vw, 100px);
+      line-height: 1.02;
+      font-weight: 700;
+      letter-spacing: -.045em;
+    }
+
+    h1 span {
+      display: block;
+      color: var(--orange);
+    }
+
+    .intro {
+      max-width: 520px;
+      margin: 27px 0 0;
+      color: var(--text);
+      font-size: clamp(15px, 1.45vw, 21px);
+      font-weight: 400;
+      line-height: 1.8;
+    }
+
+    .status {
+      max-width: 545px;
+      margin-top: 48px;
+    }
+
+    .status-label {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 15px;
+      color: var(--text);
+      font-size: clamp(13px, 1.25vw, 18px);
+      letter-spacing: .04em;
+    }
+
+    .gear {
+      width: 35px;
+      height: 35px;
+      flex: 0 0 35px;
+      display: grid;
+      place-items: center;
+      color: var(--orange);
+      font-size: 32px;
+      line-height: 1;
+    }
+
+    .progress-row {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .progress-track {
+      height: 14px;
+      flex: 1;
+      overflow: hidden;
+      border-radius: 999px;
+      background: rgba(27, 73, 119, .15);
+    }
+
+    .progress-fill {
+      width: 75%;
+      height: 100%;
+      border-radius: inherit;
+      background: var(--orange);
+    }
+
+    .progress-number {
+      min-width: 42px;
+      color: var(--text);
+      font-size: 15px;
+    }
+
+    .site-footer {
+      min-height: 178px;
+      padding: 38px clamp(22px, 5.7vw, 88px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      color: var(--white);
+      background: linear-gradient(110deg, #0c2a4b, #12375f 55%, #0c2a4b);
+      text-align: center;
+    }
+
+    .footer-rule {
+      width: 100%;
+      height: 1px;
+      flex: 0 0 1px;
+      background: rgba(255,255,255,.95);
+    }
+
+    .copyright {
+      margin: 0;
+      color: #fff;
+      font-size: clamp(14px, 1.55vw, 23px);
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    @media (min-width: 1500px) {
+      .content { width: min(58vw, 900px); }
+    }
+
+    @media (max-width: 760px) {
+      .hero {
+        min-height: 0;
+        background:
+          linear-gradient(90deg, rgba(255,255,255,.97), rgba(255,255,255,.78)),
+          linear-gradient(0deg, rgba(255,255,255,.45), rgba(255,255,255,.25)),
+          url("./construction-scene.jpg") 58% center / cover no-repeat,
+          #f8fbff;
+      }
+      .site-header { padding-top: 27px; }
+      .content { margin: auto 0; padding-top: 78px; padding-bottom: 76px; }
+      .eyebrow { gap: 12px; letter-spacing: .13em; white-space: normal; }
+      .eyebrow::before { width: 36px; flex-basis: 36px; }
+      h1 { font-size: clamp(46px, 11vw, 76px); letter-spacing: -.04em; }
+      .intro { max-width: 480px; line-height: 1.75; }
+      .status { margin-top: 38px; }
+      .site-footer { min-height: 150px; padding: 27px 22px; gap: 20px; }
+      .copyright { max-width: 620px; font-size: 14px; }
+    }
+
+    @media (max-width: 390px) {
+      .content { padding-left: 22px; padding-right: 22px; }
+      .brand { letter-spacing: .09em; }
+      .progress-row { gap: 12px; }
+      .status-label { gap: 12px; }
+      .site-footer { min-height: 140px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { scroll-behavior: auto !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="hero">
+    <header class="site-header">
+      <p class="brand">ALEGRIA VENTURES</p>
+    </header>
+
+    <section class="content" aria-labelledby="headline">
+      <p class="eyebrow">Building a brighter tomorrow</p>
+      <h1 id="headline">Is Under <span>Processing</span></h1>
+      <p class="intro">
+        We’re working hard to bring you something exciting.
+        Our website is currently under processing. Please check back soon.
+      </p>
+
+      <div class="status" aria-label="Website status: under development">
+        <div class="status-label">
+          <span class="gear" aria-hidden="true">⚙</span>
+          <span>Website Under Development</span>
+        </div>
+        <div class="progress-row">
+          <div class="progress-track" role="progressbar" aria-label="Illustrative website development progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75">
+            <div class="progress-fill"></div>
+          </div>
+          <span class="progress-number">75%</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-rule" aria-hidden="true"></div>
+    <p class="copyright">© 2026, Owned and Developing by Alegria Ventures Private Limited.</p>
+  </footer>
+</body>
+</html>
